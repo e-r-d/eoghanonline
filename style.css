@@ -4,6 +4,28 @@
   margin-right: auto;
   width: 50%;
 }
+.centerbig {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.centertext {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 200%;
+}
+
+.centertextsmall {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 100%;
+}
+
 
 #tobaccointernet {
   width:50%;
