@@ -79,7 +79,7 @@ p {
       width: 100%;
     }
 
-    /* Responsive layout - makes a two column-layout instead of four columns
+    /* Responsive layout - makes a two column-layout instead of four columns */
     @media screen and (max-width: 800px) {
       .column {
         -ms-flex: 50%;
@@ -88,18 +88,35 @@ p {
       }
     }
 
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
       .column {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
       }
-    }*/
+    }
 
   @media screen and (max-width: 600px) {
-    body {
-      background-color: black;
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
     }
+    .centerbig {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+
+    .centertext {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 100%;
+      }
 
   }
