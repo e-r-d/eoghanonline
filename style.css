@@ -8,7 +8,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 40%;
 }
 .centertext {
   display: block;
@@ -36,12 +36,18 @@ p {
   position: absolute;
   top: 15%;
   left: 7%;}
+  #world {
+    width:20%;
+    position: absolute;
+    top: 30%;
+    left: 65%;}
 
 #bunb {
     width:40%;
     position: absolute;
     top: 45%;
     left: 45%;}
+
 
     * {
       box-sizing: border-box;
