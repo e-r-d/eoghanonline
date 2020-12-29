@@ -4,6 +4,7 @@
   margin-right: auto;
   width: 50%;
 }
+
 .centerbig {
   display: block;
   margin-left: auto;
@@ -28,15 +29,17 @@
 
 p {
   padding: 4px;
+  margin: 4px;
 }
 
-
+/* HOMEPAGE IMAGES DESKTOP */
 #tobaccointernet {
   width:50%;
   position: absolute;
   top: 15%;
   left: 7%;}
-  #world {
+
+#world {
     width:20%;
     position: absolute;
     top: 30%;
@@ -48,6 +51,14 @@ p {
     top: 45%;
     left: 45%;}
 
+#rock {
+    width:20%;
+    position: absolute;
+    top: 70%;
+    left: 20%;}
+
+
+/* RESPONSIVE IMAGE GRID */
 
     * {
       box-sizing: border-box;
@@ -71,7 +82,34 @@ p {
       padding: 0 4px;
     }
 
-    /* Create four equal columns that sits next to each other */
+    .row2 {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+      vertical-align: middle;
+    }
+
+    .row2 img {
+      margin: auto;
+
+    }
+
+/*three column*/
+    .column3 {
+      -ms-flex: 33.3%; /* IE10 */
+      flex: 33.3%;
+      max-width: 33.3%;
+      padding: 0 4px;
+    }
+
+    .column3 img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+/* Create four equal columns that sits next to each other */
     .column {
       -ms-flex: 25%; /* IE10 */
       flex: 25%;
@@ -124,5 +162,6 @@ p {
         margin-right: auto;
         font-size: 100%;
       }
+
 
   }
