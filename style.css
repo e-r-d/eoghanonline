@@ -5,11 +5,19 @@
   width: 50%;
 }
 
+#world1{
+  margin-top: 45%;
+}
+
+
+
 .centerbig {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 60%;
+  padding: 5px;
+
 }
 .centertext {
   display: block;
@@ -24,7 +32,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 100%;
+  font-size: 50%;
 }
 
 p {
@@ -57,6 +65,28 @@ p {
     top: 70%;
     left: 20%;}
 
+    #instagram {
+        width:15%;
+        position: absolute;
+        top: 85%;
+        left: 70%;}
+
+    #arena{
+            width:15%;
+            position: absolute;
+            top: 85%;
+            left: 70%;}
+
+    #seven11 {
+                width:15%;
+                position: absolute;
+                top: 70%;
+                left: 15%;}
+#mcnike {
+                            width:15%;
+                            position: absolute;
+                            top: 85%;
+                            left: 15%;}
 
 /* RESPONSIVE IMAGE GRID */
 
