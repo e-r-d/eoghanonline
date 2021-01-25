@@ -10,6 +10,11 @@
   margin-bottom:5px;
 }
 
+.blackbackground{
+  background-color: black;
+  color: white;
+}
+
 
 
 .centerbig {
@@ -147,6 +152,18 @@ p {
       vertical-align: middle;
       width: 100%;
     }
+/*twocolumn*/
+    .column2 {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+
+    .column2 img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
 
     /* Responsive layout - makes a two column-layout instead of four columns */
     @media screen and (max-width: 800px) {
@@ -160,6 +177,14 @@ p {
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
       .column3 {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column2 {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
