@@ -350,3 +350,8 @@ p {
   } #bunb4 {width: 75%;}
 
   /**bunb page end**/
+
+  .centergifwewontgohome {
+    margin: auto;
+      width: 50%;
+  }
