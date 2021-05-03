@@ -1,0 +1,348 @@
+body {
+  cursor:crosshair;
+  background-color: white;
+}
+body img{
+  cursor:crosshair;
+}
+
+/*img {
+  cursor:cell;
+
+}*/
+
+p {
+  padding: 10px;
+  margin: 10px;
+}
+
+
+
+
+/**HOMEPAGE**/
+
+.homegrid {
+  display: grid;
+  grid-template-columns: repeat(40, 2.5%);
+  grid-template-rows: repeat(22, 4.54545454545%);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+
+}
+
+/*.homegrid img{    cursor:cell;
+}*/
+
+.tobaccointernet {
+  grid-column: 1 / 11;
+  grid-row: 1;
+  padding: 8px 8px;
+
+} #tobaccointernet {width: 100%;
+
+}
+
+.photo23 {
+  grid-column: 6 / 12;
+  grid-row: 18;
+} #photo23 {width: 100%;}
+
+.wewontgohome {
+  grid-column: 21 / 32;
+  grid-row: 20;
+} #wewontgohome {width: 100%;}
+
+.rock {
+  grid-column: 17 / 23;
+  grid-row: 8;
+} #rock {width: 100%;}
+
+
+.email {
+  grid-column: 34 / 40;
+  grid-row: 19;
+} #email { width: 100%;}
+
+.bunb {
+  grid-column: 27 / 34;
+  grid-row: 4;
+} #bunb {width: 100%;}
+
+.alife3dmagnet {
+  grid-column:23 / 27;
+  grid-row: 15;
+} #alife3dmagnet {width: 100%;}
+
+.instagram {
+  grid-column: 38/ 40;
+  grid-row: 16;
+} #instagram {width: 100%;}
+
+.arena {
+  grid-column: 38/ 40;
+  grid-row: 13;
+} #arena {width: 100%;}
+
+.mcnike {
+  grid-column: 2 / 4;
+  grid-row: 16;
+} #mcnike {width: 100%;}
+
+.world {
+  grid-column: 33/ 39;
+  grid-row: 3;
+} #world {width: 100%;}
+
+.articon {
+  grid-column: 6/ 10;
+  grid-row: 22;
+} #articon {width: 100%;}
+
+
+#gmail {
+  text-align: center;
+  font-size: 100px;
+  margin-top: 15%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.centers {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.centerbigger {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.smallleft {
+  display: block;
+  margin-left:50px;
+  margin-top:50px;
+  margin-right: auto;
+  width: 25%;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE IMAGE GRID */
+/* RESPONSIVE IMAGE GRID */
+/* RESPONSIVE IMAGE GRID */
+/* RESPONSIVE IMAGE GRID */
+/* RESPONSIVE IMAGE GRID */
+/* RESPONSIVE IMAGE GRID */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    .row2 {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+
+/*three column*/
+    .column3 {
+      -ms-flex: 33.3%; /* IE10 */
+      flex: 33.3%;
+      max-width: 33.3%;
+      padding: 0 4px;
+    }
+
+    .column3 img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+/*twocolumn*/
+    .column2 {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+
+    .column2 img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column3 {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column3 {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column2 {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .row2 {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .row2 img{
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+/* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+  @media screen and (max-width: 600px) {
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+    .centerbig {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+
+    .centertext {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 100%;
+      }
+  }
+  /* END */
+  /* ENDRESPONSIVE IMAGE GRID */
+  /* ENDRESPONSIVE IMAGE GRID */
+  /* ENDRESPONSIVE IMAGE GRID */
+  /* ENDRESPONSIVE IMAGE GRID */
+  /* ENDRESPONSIVE IMAGE GRID */
+
+  /**bunb page**/
+
+  .bunbgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows:100%;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .left {
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+  } #bunbgraphic {height:100%;}
+
+  .left2 {
+    grid-column: 1;
+    grid-row: 2;
+  } #bunbshirt {width: 100%;}
+
+  .right {
+    grid-column: 2 / 3;
+        grid-row: 1;
+        margin: auto;
+
+  } #bunbig {width:100%;}
+
+  .right2 {
+    grid-column: 2 / 3;
+        grid-row: 2;
+        margin: auto;
+  } #bunb4 {width: 75%;}
+
+  /**bunb page end**/
