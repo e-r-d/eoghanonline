@@ -1,6 +1,7 @@
-body {
+html {
   cursor:crosshair;
   background-color: white;
+  color: black;
 }
 body img{
   cursor:crosshair;
@@ -336,7 +337,6 @@ p {
     grid-column: 2 / 3;
         grid-row: 1;
         margin: auto;
-
   } #bunbig {width:100%;}
 
   .right2 {
