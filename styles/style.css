@@ -327,6 +327,8 @@ p {
     grid-row: 1;
     margin: auto;
     margin-top: 0%;
+    padding-top: 0%;
+
   } #bunbgraphic {width: 80%;}
 
   .left2 {
