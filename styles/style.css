@@ -109,10 +109,11 @@ p {
 } #articon {width: 100%;}
 
 
+
 #gmail {
   text-align: center;
-  font-size: 100px;
-  margin-top: 15%;
+  font-size: 5vw;
+  margin-top: 30vh;
 }
 
 .center {
@@ -316,7 +317,7 @@ p {
   /* ENDRESPONSIVE IMAGE GRID */
   /* ENDRESPONSIVE IMAGE GRID */
 
-  /**bunb page**/
+  /**bunb page
 
   .bunbgrid {
     display: grid;
@@ -349,16 +350,21 @@ p {
         margin-top: 3.67%;
   }
 
-  #bunbig {
-    margin-top: 3.67%;}
+
 
   .right2 {
     grid-column: 2;
         margin: auto;
   } #bunb4 {width: 75%;}
 
+  **/
+
   #bunb7 {
     margin: auto;}
+
+  #bunbig {
+    margin-top: 3.67%;}
+
 
   /**bunb page end**/
 
