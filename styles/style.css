@@ -118,28 +118,19 @@ p {
 
 }
 
-.emailicons {
-  width: 70vw;
-  margin: auto;
-  margin-top: 10vh;
 
-}
-
-
+/*
 #emailclienticon {
   width: 50%;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 #gmailicon {
   width: 50%;
-  display: block;
   margin-left: auto;
   margin-right: auto;
-
-}
+}*/
 
 
 
@@ -406,5 +397,9 @@ p {
   }
 
   @media screen and (max-width: 600px) {
-    .booklet{  margin: auto;
-        width: 100%; }}
+    .booklet {
+      margin: auto;
+      width: 100%;
+    }
+
+      }
