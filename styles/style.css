@@ -108,6 +108,10 @@ p {
   grid-row: 22;
 } #articon {width: 100%;}
 
+.eoghanalife {
+  grid-column: 3/ 13;
+  grid-row: 24;
+} #eoghanalife {width: 100%;}
 
 
 #gmail {
@@ -232,11 +236,6 @@ p {
       width: 100%;
     }
 
-    .column2 a {
-      margin-top: 8px;
-      vertical-align: middle;
-      width: 100%;
-    }
 
     /* Responsive layout - makes a two column-layout instead of four columns */
     @media screen and (max-width: 800px) {
