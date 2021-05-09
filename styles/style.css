@@ -4,10 +4,21 @@ html {
   color: black;
 }
 
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+
 .blackbackground {
   background-color: black;
   color: white;
 }
+
+.blackbackground a {
+  color: grey;
+}
+
 
 body img{
   cursor:crosshair;
@@ -35,7 +46,7 @@ p {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100vh;
+  height: 400vh;
 
 
 }
@@ -59,7 +70,7 @@ p {
 
 .wewontgohome {
   grid-column: 21 / 32;
-  grid-row: 20;
+  grid-row: 14;
 } #wewontgohome {width: 100%;}
 
 .rock {
@@ -105,13 +116,18 @@ p {
 
 .articon {
   grid-column: 6/ 10;
-  grid-row: 22;
+  grid-row: 10;
 } #articon {width: 100%;}
 
 .eoghanalife {
   grid-column: 3/ 13;
-  grid-row: 24;
+  grid-row: 18;
 } #eoghanalife {width: 100%;}
+
+/*.texthome {
+    grid-row: 22;
+}*/
+
 
 
 #gmail {
@@ -165,6 +181,34 @@ p {
   margin-right: auto;
   width: 25%;
 }
+
+
+footer,
+nav {
+  position: fixed;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: grey;
+
+}
+
+nav span {
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+footer {
+  display: none;
+}
+
 
 
 
@@ -402,10 +446,23 @@ p {
       width: 50%;
   }
 
+
+
   .booklet {
     margin: auto;
-      width: 60%;
+      width: 80%;
   }
+
+  .emicon {
+    margin: auto;
+    width: 50%;
+  }
+
+  .emicon img {
+    padding:  1vw;
+  }
+
+
 
   @media screen and (max-width: 600px) {
     .booklet {
@@ -415,19 +472,32 @@ p {
 
       }
 
-      .emailicons {
-        margin: auto;
-        width: 60%;
-      }
 
       @media screen and (max-width: 600px) {
-        .emailicons {
+
+        .emicon {
           margin: auto;
-          width: 80%;
-        }
-        .emailicons a {
-          margin: auto;
-          width: 80%;
+          width: 60%;
         }
 
+        #gmail {
+          text-align: center;
+          font-size: 7vw;
+        }
+
+
+
           }
+
+#mcnike2 {
+  height: 100vh;
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 600px) {
+#mcnike2 {
+  height: auto;
+  margin: auto;
+  width: 99vw;
+
+}}
