@@ -403,3 +403,16 @@ p {
     }
 
       }
+
+      .emailicons {
+        margin: auto;
+        width: 60%;
+      }
+
+      @media screen and (max-width: 600px) {
+        .emailicons {
+          margin: auto;
+          width: 80%;
+        }
+
+          }
