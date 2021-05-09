@@ -150,8 +150,7 @@ p {
 
 .centerbigger {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 100%;
 }
 
@@ -233,6 +232,12 @@ p {
       width: 100%;
     }
 
+    .column2 a {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
     /* Responsive layout - makes a two column-layout instead of four columns */
     @media screen and (max-width: 800px) {
       .column3 {
@@ -269,6 +274,13 @@ p {
     }
     @media screen and (max-width: 600px) {
       .row2 img{
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .row2 a{
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
@@ -411,6 +423,10 @@ p {
 
       @media screen and (max-width: 600px) {
         .emailicons {
+          margin: auto;
+          width: 80%;
+        }
+        .emailicons a {
           margin: auto;
           width: 80%;
         }
