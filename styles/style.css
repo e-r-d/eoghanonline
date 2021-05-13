@@ -46,7 +46,7 @@ p {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 400vh;
+  height: 300vh;
 
 
 }
@@ -55,7 +55,7 @@ p {
 }*/
 
 .tobaccointernet {
-  grid-column: 1 / 11;
+  grid-column: 1 / 23;
   grid-row: 1;
   padding: 8px 8px;
 
@@ -69,49 +69,49 @@ p {
 } #photo23 {width: 100%;}
 
 .wewontgohome {
-  grid-column: 21 / 32;
-  grid-row: 14;
+  grid-column: 23 / 37;
+  grid-row: 13;
 } #wewontgohome {width: 100%;}
 
 .rock {
-  grid-column: 17 / 23;
-  grid-row: 8;
+  grid-column: 20 / 36;
+  grid-row: 5;
 } #rock {width: 100%;}
 
 
 .email {
-  grid-column: 34 / 40;
-  grid-row: 19;
+  grid-column: 29 / 37;
+  grid-row: 20;
 } #email { width: 100%;}
 
 .bunb {
-  grid-column: 27 / 34;
-  grid-row: 4;
+  grid-column: 27 / 38;
+  grid-row: 2;
 } #bunb {width: 100%;}
 
 .alife3dmagnet {
-  grid-column:5 / 12;
+  grid-column:34 / 41;
   grid-row: 7;
 } #alife3dmagnet {width: 100%;}
 
 .instagram {
-  grid-column: 38/ 40;
-  grid-row: 16;
+  grid-column: 2/ 4;
+  grid-row: 5;
 } #instagram {width: 100%;}
 
 .arena {
-  grid-column: 38/ 40;
-  grid-row: 13;
+  grid-column: 2 / 4;
+  grid-row: 6;
 } #arena {width: 100%;}
 
 .mcnike {
   grid-column: 2 / 4;
-  grid-row: 16;
+  grid-row: 7;
 } #mcnike {width: 100%;}
 
 .world {
-  grid-column: 33/ 39;
-  grid-row: 3;
+  grid-column:35/ 40;
+  grid-row: 2;
 } #world {width: 100%;}
 
 .articon {
@@ -120,8 +120,8 @@ p {
 } #articon {width: 100%;}
 
 .eoghanalife {
-  grid-column: 3/ 13;
-  grid-row: 18;
+  grid-column: 5/ 21;
+  grid-row: 11;
 } #eoghanalife {width: 100%;}
 
 /*.texthome {
