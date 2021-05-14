@@ -450,7 +450,8 @@ footer {
 
   .booklet {
     margin: auto;
-      width: 60%;
+    margin-left: 4px;
+      width: 66%;
   }
 
   .emicon {
