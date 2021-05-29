@@ -55,7 +55,7 @@ p {
 }*/
 
 .tobaccointernet {
-  grid-column: 1 / 23;
+  grid-column: 1 / 15;
   grid-row: 1;
   padding: 8px 8px;
 
@@ -74,7 +74,7 @@ p {
 } #wewontgohome {width: 100%;}
 
 .rock {
-  grid-column: 20 / 36;
+  grid-column: 18 / 25;
   grid-row: 5;
 } #rock {width: 100%;}
 
@@ -123,6 +123,12 @@ p {
   grid-column: 5/ 21;
   grid-row: 11;
 } #eoghanalife {width: 100%;}
+
+.passport {
+  grid-column: 19/22;
+  grid-row: 18;
+} #passport {width: 100%;}
+
 
 /*.texthome {
     grid-row: 22;
@@ -489,6 +495,11 @@ footer {
 
 
           }
+
+.image10 {
+  width: 10%;
+
+}
 
 #mcnike2 {
   height: 100vh;
