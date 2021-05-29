@@ -78,6 +78,10 @@ p {
   grid-row: 5;
 } #rock {width: 100%;}
 
+.trueblue {
+  grid-column: 8 / 16;
+  grid-row: 6;
+} #trueblue {width: 100%;}
 
 .email {
   grid-column: 29 / 37;
