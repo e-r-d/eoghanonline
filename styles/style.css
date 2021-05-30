@@ -227,6 +227,12 @@ p {
   grid-row: 4;
 } #kobe {width: 100%;}
 
+.madonna {
+  grid-column: 4;
+  grid-row: 4;
+} #madonna {width: 100%;}
+
+
 .joni {
   grid-column: 4;
   grid-row: 5;
