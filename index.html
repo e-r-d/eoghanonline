@@ -6,17 +6,26 @@
   <link rel="icon" href="personal/images/instagram.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="jquery.js"></script>
+
 
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
-<body class="vh200">
+<body onload="myFunction()" style="margin:0;">
+
+<img src="personal/images/instagram.png" alt="instagram" id="loader">
+
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
 
 
 <div class="homegrid">
 
-  <div class="tobaccointernet">
-    <a href="art&design/tobaccointernet/tobaccointernet.html" class="invertcolorsimg"><img src="art&design/tobaccointernet/images/tobaccointernet.jpg" alt="tobaccointernet" id="tobaccointernet">
+  <div class="tobaccointernet" >
+    <a href="art&design/tobaccointernet/tobaccointernet.html" class="invertcolorsimg" id="tobaccointernetdiv"><img src="art&design/tobaccointernet/images/tobaccointernet.jpg" alt="tobaccointernet" id="tobaccointernet">
       <span>Photography Installation and Zine</span>
 </a>
   </div>
@@ -77,21 +86,23 @@
   </div>
 
   <div class="vhs">
-    <a href="photos/photos.html" class="invertcolorsimg"><img src= "photos/images/photo135.jpg" alt="photo135" id="vhs">
+    <a href="photos/photos.html"><img src= "photos/images/photo135.jpg" alt="photo135" id="vhs">
     <span>Photography</span></a>
   </div>
 
-<div class="people">
-<a href="art&design/eoghanalife/EoghanAlife.html"><img src="art&design/eoghanalife/people.jpg" alt="pp" id="people">
-<span>Eoghan Dempsey x Alife®</span></a>
 
-
-</div>
 
   <div class="eoghanalife">
     <a href="art&design/eoghanalife/EoghanAlife.html"><img src="art&design/eoghanalife/eoghanalife.png" alt="eoghanalife" id="eoghanalife">
     <span>Eoghan Dempsey x Alife®</span></a>
   </div>
+
+  <div class="people">
+  <a href="art&design/eoghanalife/EoghanAlife.html"><img src="art&design/eoghanalife/people.jpg" alt="pp" id="people">
+  <span>Eoghan Dempsey x Alife®</span></a>
+  </div>
+
+
 
   <div class="trueblue">
     <a href="art&design/trueblue/trueblue.html" ><img src="art&design/trueblue/truebluescreenshot.png" alt="trueblue" id="trueblue">
@@ -99,7 +110,7 @@
   </div>
 
   <div class="stayinside">
-    <a href="art&design/art&design.html" class="invertcolorsimg"><img src="art&design/etc/StayInsideCOVER.png" alt="stayinside" id="stayinside" >
+    <a href="art&design/art&design.html"><img src="art&design/etc/StayInsideCOVER.png" alt="stayinside" id="stayinside" >
     <span> Graphic Design</span></a>
   </div>
 
@@ -123,6 +134,11 @@
       <span>Sticker On Glass (2020)</span></a>
   </div>
 
+  <div class="karshe">
+    <a href="photos/photos.html"><img src="photos/images/photo153.jpg" alt="karshe" id="karshe">
+      <span>Karshe / Photography</span></a>
+  </div>
+
 
 
 </div>
@@ -137,10 +153,24 @@
 
 <footer></footer>
   <nav>
-    <span><a href="index.html">©2021 Eoghan Dempsey</a>—<a href="art&design/art&design.html">Art & Design</a> / <a href="photos/photos.html">Photo</a> / <a href="https://archive.eoghan.world">Archive</a></span>
+    <a href="index.html" id="homelink">©2021 Eoghan Dempsey</a>—<a href="art&design/art&design.html" id="andlink">Art & Design</a> &nbsp; / &nbsp; <a href="photos/photos.html" id="photolink">Photography</a> &nbsp; / &nbsp; <a href="https://archive.eoghan.world" id="archivelink">Archive</a>
   </nav>
 
+</div>
 
+
+  <script>
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
 
 </body>
 

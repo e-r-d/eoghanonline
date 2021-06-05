@@ -10,6 +10,47 @@ a {
   text-decoration: none;
 }
 
+#loader {
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 150px;
+   height: 150px;
+   margin:-60px 0 0 -60px;
+  animation: spin 4s infinite linear; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg); }
+}
+
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;}
+
 
 .blackbackground {
   background-color: black;
@@ -62,8 +103,11 @@ a:hover span {
   display: block;
   margin-top: 0;
   padding-top: 0;
-
 }
+
+/*.tobaccointernet:hover img ~ .andlink a {
+color: blue;
+}*/
 
 .invertcolorsimg:hover img {
   -webkit-filter: invert(100%) !important;
@@ -130,20 +174,17 @@ a:hover span {
 .people {
   grid-column: 11 / 14;
   grid-row: 1 / 5;
-  z-index: 1;
 }
 
 .eoghanalife {
   grid-column: 11 / 14;
   grid-row: 1 / 5;
-  z-index: 0;
-
 }
 
-.people:hover
+/*.people:hover
    {
-     display: none;
-   }
+     z-index: -1;
+   }*/
 
 
 
@@ -229,21 +270,25 @@ a:hover span {
 }
 
 .vhs {
-  grid-column: 13 / 17;
+  grid-column: 14 / 17;
   grid-row:  16 / 21;
 }
 
 .stayinside {
-  grid-column: 10 / 13;
-  grid-row: 18 / 21;
+  grid-column: 12 / 14;
+  grid-row: 20 / 22;
 }
 
 
 .lightlink {
-  grid-column: 8 / 13;
+  grid-column: 3 / 8;
   grid-row:  14 / 18;
 }
 
+.karshe {
+  grid-column: 10 / 14;
+  grid-row: 14 / 20;
+}
 
 
 /**END HOMEPAGE**/
@@ -485,19 +530,23 @@ nav {
 nav {
   position: -webkit-sticky;
   position: sticky;
-  bottom: 15px;
+  bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   color: grey;
-
-}
-
-nav span {
   padding-left: 10px;
   margin-left: 10px;
   margin-right: auto;
+  font-size: 24px;
+
 }
+
+/*nav span {
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+}*/
 
 footer {
   display: none;
