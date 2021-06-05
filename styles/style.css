@@ -12,11 +12,11 @@ a {
 
 #loader {
   position: absolute;
-   top: 50%;
+   top: 49.5%;
    left: 50%;
    width: 150px;
    height: 150px;
-   margin:-60px 0 0 -60px;
+   margin:-75px 0 0 -75px;
   animation: spin 4s infinite linear; }
 
 @keyframes spin {
@@ -78,10 +78,6 @@ body img{
   cursor:crosshair;
 }
 
-/*img {
-  cursor:cell;
-
-}*/
 
 p {
   padding: 10px;
@@ -105,9 +101,6 @@ a:hover span {
   padding-top: 0;
 }
 
-/*.tobaccointernet:hover img ~ .andlink a {
-color: blue;
-}*/
 
 .invertcolorsimg:hover img {
   -webkit-filter: invert(100%) !important;
@@ -144,11 +137,8 @@ color: blue;
         padding: 0;
 }
 
-/*.email:hover img {
-    -webkit-filter: invert(100%) !important;
-}
 
-.homegrid:hover div {
+/*.homegrid:hover div {
   border: 1px black solid;
 }*/
 
@@ -233,6 +223,7 @@ color: blue;
   grid-column: 2 / 4;
   grid-row: 9 / 11;
   position: sticky;
+  position: -webkit-sticky;
   bottom: 45px;
   left: 40px;
   width: 20%;
@@ -348,6 +339,7 @@ color: blue;
   grid-column: 4 / 5;
   grid-row: 2;
   position: sticky;
+  position: -webkit-sticky;
   bottom: 10px;
   right: 10px;
   align-self: baseline;
@@ -427,6 +419,7 @@ color: blue;
 
 .stickycaption {
     position: sticky;
+    position: -webkit-sticky;
     bottom: 25px;
     left: 20px;
     align-self: start;
@@ -442,6 +435,7 @@ color: blue;
 
 .truebluestickycaption {
   position: sticky;
+  position: -webkit-sticky;
   bottom: 25px;
   left: 0;
   margin-left: 0;

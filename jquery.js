@@ -23,7 +23,7 @@ $(function() {
 
 //Personal//
 $(function() {
-  $('.passport, .dempseydewalt, .email, .eoghanalife').hover(function() {
+  $('.passport, .dempseydewalt, .eoghanalife').hover(function() {
     $('#homelink').css('color', 'blue');
   }, function() {
     // on mouseout, reset the background colour
