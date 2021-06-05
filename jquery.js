@@ -42,8 +42,15 @@ $('.eoghanalife').hover(function(){
 */
 
 
+
 $(function(){
-  $(".people").mouseover(function(){
-    $(this).toggle();
+  $(".eoghanalife, .people").mouseover(function(){
+    $(".people").hide();
+  });
+});
+
+$(function(){
+  $(".eoghanalife, .people").mouseout(function(){
+    $(".people").show();
   });
 });
