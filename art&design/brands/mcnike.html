@@ -10,13 +10,40 @@
   <link rel="icon" href="../../personal/images/instagram.png">
 </head>
 
-<body>
+<body onload="myFunction()">
+  <div id="loader"><div id="loader2">
+  <img src="../../personal/images/instagram.png" alt="instagram"></div>
+    <nav>
+      <a href="index.html" class="homelink">©2021 Eoghan Dempsey—</a><a href="art&design/art&design.html" class="andlink">Art & Design</a><div class="slashes">&nbsp;/&nbsp;</div><a href="photos/photos.html" class="photolink">Photography</a>
+      <div class="slashes">&nbsp;/&nbsp;</div><a href="https://archive.eoghan.world" class="archivelink">Archive</a>
+    </nav>
+  </div><div style="display:none;" id="myDiv" class="animate-bottom">
 <img src="mcnike2.gif" alt="mcnike" id="mcnike2">
 
 <footer></footer>
   <nav>
     <span><a href="../../index.html">©2021 Eoghan Dempsey</a>—<a href="../art&design.html">Art & Design</a> / <a href="../../photos/photos.html">Photo</a> / <a href="https://archive.eoghan.world">Archive</a></span>
   </nav>
+
+</div>
+
+
+
+
+  <script>
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+
 </body>
+
 
 </html>

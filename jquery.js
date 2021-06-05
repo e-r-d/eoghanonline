@@ -2,10 +2,21 @@
 //art and design//
 $(function() {
   $('.alife3dmagnet, .world, .globeteeshots, .trueblue, .rock, .bunb, .mcnike, .stayinside, .tobaccointernet, .wewontgohome, .tobaccointernetexhibit, .eoghanalife, .lightlink').hover(function() {
-    $('#andlink').css('color', 'blue');
+    $('.homelink, .archivelink, .slashes, .photolink').css({
+   'filter'         : 'blur(4px)',
+   '-webkit-filter' : 'blur(4px)',
+   '-moz-filter'    : 'blur(4px)',
+   '-o-filter'      : 'blur(4px)',
+   '-ms-filter'     : 'blur(4px)'
+});
   }, function() {
     // on mouseout, reset the background colour
-    $('#andlink').css('color', '');
+    $('.homelink, .archivelink, .slashes, .photolink').css({
+   'filter'         : 'blur(0px)',
+   '-webkit-filter' : 'blur(0px)',
+   '-moz-filter'    : 'blur(0px)',
+   '-o-filter'      : 'blur(0px)',
+   '-ms-filter'     : 'blur(0px)'});
   });
 });
 
@@ -13,10 +24,21 @@ $(function() {
 //Photography//
 $(function() {
   $('.deerlightleak, .nuns, .karshe, .vhs, .tobaccointernet, .wewontgohome, .tobaccointernetexhibit, .eoghanalife, .lightlink').hover(function() {
-    $('#photolink').css('color', 'blue');
+    $('.andlink, .homelink, .archivelink, .slashes').css({
+   'filter'         : 'blur(4px)',
+   '-webkit-filter' : 'blur(4px)',
+   '-moz-filter'    : 'blur(4px)',
+   '-o-filter'      : 'blur(4px)',
+   '-ms-filter'     : 'blur(4px)'
+});
   }, function() {
     // on mouseout, reset the background colour
-    $('#photolink').css('color', '');
+    $('.andlink, .homelink, .archivelink, .slashes').css({
+   'filter'         : 'blur(0px)',
+   '-webkit-filter' : 'blur(0px)',
+   '-moz-filter'    : 'blur(0px)',
+   '-o-filter'      : 'blur(0px)',
+   '-ms-filter'     : 'blur(0px)'});
   });
 });
 
@@ -24,10 +46,21 @@ $(function() {
 //Personal//
 $(function() {
   $('.passport, .dempseydewalt, .eoghanalife').hover(function() {
-    $('#homelink').css('color', 'blue');
+    $('.andlink, .photolink, .archivelink, .slashes').css({
+   'filter'         : 'blur(4px)',
+   '-webkit-filter' : 'blur(4px)',
+   '-moz-filter'    : 'blur(4px)',
+   '-o-filter'      : 'blur(4px)',
+   '-ms-filter'     : 'blur(4px)'
+});
   }, function() {
     // on mouseout, reset the background colour
-    $('#homelink').css('color', '');
+    $('.andlink, .photolink, .archivelink, .slashes').css({
+   'filter'         : 'blur(0px)',
+   '-webkit-filter' : 'blur(0px)',
+   '-moz-filter'    : 'blur(0px)',
+   '-o-filter'      : 'blur(0px)',
+   '-ms-filter'     : 'blur(0px)'});
   });
 });
 

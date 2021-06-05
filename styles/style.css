@@ -10,14 +10,41 @@ a {
   text-decoration: none;
 }
 
-#loader {
+#loader2 {
+  height: 100vh;
+}
+
+#loader img {
   position: absolute;
    top: 49.5%;
    left: 50%;
    width: 150px;
    height: 150px;
    margin:-75px 0 0 -75px;
-  animation: spin 4s infinite linear; }
+  animation: spin 5s infinite linear; }
+
+  #loader img:hover {
+    -webkit-filter: invert(100%) !important;
+
+ }
+
+  #loader footer, nav {
+      position: fixed;
+    }
+
+  #loader nav {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: black;
+    margin-left: 2.2%;
+    margin-right: auto;
+    font-size: 3.4vw;;
+    filter: blur(2px);
+    }
 
 @keyframes spin {
   from {
@@ -48,8 +75,7 @@ a {
 }
 
 #myDiv {
-  display: none;
-  text-align: center;}
+  display: none;}
 
 
 .blackbackground {
@@ -102,10 +128,17 @@ a:hover span {
 }
 
 
-.invertcolorsimg:hover img {
+/*.invertcolorsimg:hover img {
+  -webkit-filter: invert(100%) !important;
+}*/
+
+.invertcolorsimg:hover {
   -webkit-filter: invert(100%) !important;
 }
 
+.saturateimg:hover {
+  -webkit-filter: saturate(100%) !important;
+}
 
 
 /**HOMEPAGE**/
@@ -515,15 +548,15 @@ nav {
 nav {
   position: -webkit-sticky;
   position: sticky;
-  bottom: 27.5px;
+  bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  color: grey;
+  color: black;
   margin-left: 2.2%;
   margin-right: auto;
-  font-size: 24px;
-
+  font-size: 3.4vw;;
+  filter: blur(3px);
 }
 
 /*nav span {
@@ -570,6 +603,15 @@ footer {
       -ms-flex-wrap: wrap; /* IE10 */
       flex-wrap: wrap;
       padding: 0 4px;
+    }
+
+    .row0 {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
     }
 
     .row2 {
@@ -669,6 +711,21 @@ footer {
       vertical-align: middle;
       width: 100%;
     }
+
+    .column0 {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0;
+    }
+
+    .column0 img {
+      margin-top: 0;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+
 
     /* Responsive layout - makes a two column-layout instead of four columns */
     @media screen and (max-width: 800px) {
