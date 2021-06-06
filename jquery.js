@@ -64,6 +64,42 @@ $(function() {
 });
 
 
+$(function() {
+  $('.homelink').hover(function() {
+    $('.homelink').css('text-decoration', 'underline');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.homelink').css('text-decoration', 'none');
+  });
+});
+
+$(function() {
+  $('.andlink').hover(function() {
+    $('.andlink').css('text-decoration', 'underline');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.andlink').css('text-decoration', 'none');
+  });
+});
+
+$(function() {
+  $('.photolink').hover(function() {
+    $('.photolink').css('text-decoration', 'underline');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.photolink').css('text-decoration', 'none');
+  });
+});
+
+$(function() {
+  $('.archivelink').hover(function() {
+    $('.archivelink').css('text-decoration', 'underline');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.archivelink').css('text-decoration', 'none');
+  });
+});
+
 
 /*
 $(function() {
