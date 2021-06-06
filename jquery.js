@@ -1,66 +1,65 @@
 //highlights category in NAV bar on hover//
-//art and design//
+// just art and design//
 $(function() {
-  $('.alife3dmagnet, .world, .globeteeshots, .trueblue, .rock, .bunb, .mcnike, .stayinside, .tobaccointernet, .wewontgohome, .tobaccointernetexhibit, .eoghanalife, .lightlink').hover(function() {
-    $('.homelink, .archivelink, .slashes, .photolink').css({
-   'filter'         : 'blur(4px)',
-   '-webkit-filter' : 'blur(4px)',
-   '-moz-filter'    : 'blur(4px)',
-   '-o-filter'      : 'blur(4px)',
-   '-ms-filter'     : 'blur(4px)'
-});
+  $('.alife3dmagnet, .world, .globeteeshots, .trueblue, .rock, .bunb, .mcnike, .stayinside').hover(function() {
+    $('.andlink').css('text-decoration', 'underline');
   }, function() {
     // on mouseout, reset the background colour
-    $('.homelink, .archivelink, .slashes, .photolink').css({
-   'filter'         : 'blur(0px)',
-   '-webkit-filter' : 'blur(0px)',
-   '-moz-filter'    : 'blur(0px)',
-   '-o-filter'      : 'blur(0px)',
-   '-ms-filter'     : 'blur(0px)'});
+    $('.andlink').css('text-decoration', 'none');
   });
 });
 
 
-//Photography//
+// art and design + Photography//
 $(function() {
-  $('.deerlightleak, .nuns, .karshe, .vhs, .tobaccointernet, .wewontgohome, .tobaccointernetexhibit, .eoghanalife, .lightlink').hover(function() {
-    $('.andlink, .homelink, .archivelink, .slashes').css({
-   'filter'         : 'blur(4px)',
-   '-webkit-filter' : 'blur(4px)',
-   '-moz-filter'    : 'blur(4px)',
-   '-o-filter'      : 'blur(4px)',
-   '-ms-filter'     : 'blur(4px)'
-});
+  $('.tobaccointernet, .wewontgohome, .tobaccointernetexhibit, .lightlink').hover(function() {
+    $('.andlink, .photolink').css('text-decoration', 'underline');
   }, function() {
     // on mouseout, reset the background colour
-    $('.andlink, .homelink, .archivelink, .slashes').css({
-   'filter'         : 'blur(0px)',
-   '-webkit-filter' : 'blur(0px)',
-   '-moz-filter'    : 'blur(0px)',
-   '-o-filter'      : 'blur(0px)',
-   '-ms-filter'     : 'blur(0px)'});
+    $('.andlink, .photolink').css('text-decoration', 'none');
+  });
+});
+
+// art and design + Photography + personal//
+$(function() {
+  $('.eoghanalife').hover(function() {
+    $('.homelink, .photolink, .andlink').css('text-decoration', 'underline');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.homelink, .photolink, .andlink').css('text-decoration', 'none');
   });
 });
 
 
-//Personal//
+// art and design + personal//
 $(function() {
-  $('.passport, .dempseydewalt, .eoghanalife').hover(function() {
-    $('.andlink, .photolink, .archivelink, .slashes').css({
-   'filter'         : 'blur(4px)',
-   '-webkit-filter' : 'blur(4px)',
-   '-moz-filter'    : 'blur(4px)',
-   '-o-filter'      : 'blur(4px)',
-   '-ms-filter'     : 'blur(4px)'
-});
+  $('.dempseydewalt').hover(function() {
+    $('.homelink, .andlink').css('text-decoration', 'underline');
   }, function() {
     // on mouseout, reset the background colour
-    $('.andlink, .photolink, .archivelink, .slashes').css({
-   'filter'         : 'blur(0px)',
-   '-webkit-filter' : 'blur(0px)',
-   '-moz-filter'    : 'blur(0px)',
-   '-o-filter'      : 'blur(0px)',
-   '-ms-filter'     : 'blur(0px)'});
+    $('.homelink, .andlink').css('text-decoration', 'none');
+  });
+});
+
+
+// just Photography//
+$(function() {
+  $('.deerlightleak, .nuns, .karshe, .vhs').hover(function() {
+    $('.photolink').css('text-decoration', 'underline');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.photolink').css('text-decoration', 'none');
+  });
+});
+
+
+// Just Personal//
+$(function() {
+  $('.passport').hover(function() {
+    $('.homelink').css('text-decoration', 'underline');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.homelink').css('text-decoration', 'none');
   });
 });
 
