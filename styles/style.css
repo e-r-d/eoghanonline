@@ -10,13 +10,15 @@ a {
   text-decoration: none;
 }
 
+
+#loader {
+  max-height: 100vh;
+}
+
 #loader2 {
   height: 100vh;
 }
 
-#loader {
-  height: 100vh;
-}
 
 #loader img {
   position: absolute;
@@ -30,16 +32,11 @@ a {
 
   #loader img:hover {
     -webkit-filter: invert(100%) !important;
-
  }
 
-  #loader footer, nav {
-      position: fixed;
-    }
 
   #loader nav {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     bottom: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +44,7 @@ a {
     color: black;
     margin-left: 2.2%;
     margin-right: auto;
+    margin-bottom: 0;
     font-size: 3.4vw;;
     filter: blur(0px);
     }
@@ -505,6 +503,10 @@ a:hover span {
   height: 100vh;
 }
 
+#vh100 {
+  height: 100vh;
+}
+
 .worldmargin{
   margin: auto;
   width: 58%;
@@ -596,8 +598,7 @@ nav {
 }
 
 nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   bottom: 20px;
   display: flex;
   flex-wrap: wrap;
