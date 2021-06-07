@@ -1,3 +1,6 @@
+$(document).ready(function() {
+
+
 //highlights category in NAV bar on hover//
 // just art and design//
 $(function() {
@@ -111,6 +114,7 @@ $('.eoghanalife').hover(function(){
 
 
 
+
 $(function(){
   $(".eoghanalife, .people").mouseover(function(){
     $(".people").hide();
@@ -121,4 +125,5 @@ $(function(){
   $(".eoghanalife, .people").mouseout(function(){
     $(".people").show();
   });
+});
 });
