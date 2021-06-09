@@ -7,19 +7,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="jquery.js"></script>
+  <script src="js/jquery.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
 <body onload="myFunction()">
 
+k
 <div id="loader">
 
 <div id="loader2">
   <img src="personal/images/instagram.png" alt="instagram">
 </div>
 
-<?php $page = 'home'; include("includes/navigation.php");?>
 
 
 </div>
@@ -159,9 +159,10 @@
 
   <!--<a href="https://archive.eoghan.online" id="archive"><p> Archive</p></a>-->
 
+</div>
 <footer></footer>
 <?php $page = 'home'; include("includes/navigation.php");?>
-</div>
+
 
 
 
