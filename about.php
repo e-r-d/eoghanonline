@@ -2,16 +2,27 @@
 <html>
 
 <head>
-  <title>Info</title>
-  <link rel="icon" href="images/instagram.png">
+  <title>About</title>
+  <link rel="icon" href="personal/images/instagram.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../styles/style.css">
-  <link rel="icon" href="images/instagram.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
 <body onload="myFunction()">
-<img src="personal/images/instagram.png" alt="instagram" id="loader">
+
+  <div id="loader">
+
+  <div id="loader2">
+    <img src="personal/images/instagram.png" alt="instagram">
+  </div>
+
+  <?php $page = 'home'; include("includes/navigation.php");?>
+
+  </div>
+
 <div style="display:none;" id="myDiv" class="animate-bottom">
 
   <img src="images/passport.png" alt="passportphoto" class="image10">

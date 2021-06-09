@@ -3,23 +3,23 @@
 
 <head>
   <title>Photos</title>
-  <link rel="icon" href="../personal/images/instagram.png">
+  <link rel="icon" href="personal/images/instagram.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../styles/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="../jquery.js"></script>
+  <script src="js/jquery.js"></script>
 </head>
 
 <body onload="myFunction()">
-  <div id="loader"><div id="loader2">
-  <img src="../personal/images/instagram.png" alt="instagram"></div>
-    <nav>
-      <a href="index.html" class="homelink">©2021 Eoghan Dempsey—</a><a href="art&design/art&design.html" class="andlink">Art & Design</a><div class="slashes">&nbsp;/&nbsp;</div><a href="photos.html" class="photolink">Photography</a>
-      <div class="slashes">&nbsp;/&nbsp;</div><a href="https://archive.eoghan.world" class="archivelink">Archive</a>
-    </nav>
-  </div><div style="display:none;" id="myDiv" class="animate-bottom">
 
+  <div id="loader">
+
+  <div id="loader2">
+    <img src="personal/images/instagram.png" alt="instagram">
+  </div>
+
+  <?php $page = 'home'; include("includes/navigation.php");?>
 
   <div class="row0">
 
