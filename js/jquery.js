@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 
+
 //highlights category in NAV bar on hover//
 // just art and design//
 $(function() {

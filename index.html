@@ -7,20 +7,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="jquery.js"></script>
+  <script src="js/jquery.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
-<body onload="myFunction()">
+<body onload="myFunction()" id="home">
 
 <div id="loader">
-
-<div id="loader2">
   <img src="personal/images/instagram.png" alt="instagram">
-</div>
-
-
-
 </div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
@@ -79,17 +73,17 @@
   </div>
 
   <div class="deerlightleak">
-    <a href="photos/photos.html"><img src="photos/images/photo87.jpg" alt="deerlightleak" id="deerlightleak">
+    <a href="photography.html"><img src="photography/images/photo87.jpg" alt="deerlightleak" id="deerlightleak">
     <span>Photography</span></a>
   </div>
 
   <div class="nuns">
-    <a href="photos/photos.html"><img src= "photos/images/nuns.jpg" alt="nuns" id="nuns">
+    <a href="photography.html"><img src= "photography/images/nuns.jpg" alt="nuns" id="nuns">
     <span>Photography</span></a>
   </div>
 
   <div class="vhs">
-    <a href="photos/photos.html"><img src= "photos/images/photo135.jpg" alt="photo135" id="vhs">
+    <a href="photography.html"><img src= "photography/images/photo135.jpg" alt="photo135" id="vhs">
     <span>Photography</span></a>
   </div>
 
@@ -142,7 +136,7 @@
   </div>
 
   <div class="karshe">
-    <a href="photos/photos.html"><img src="photos/images/karshe.jpg" alt="karshe" id="karshe">
+    <a href="photography.html"><img src="photography/images/karshe.jpg" alt="karshe" id="karshe">
       <span>Karshe / Photography</span></a>
   </div>
 
@@ -158,13 +152,12 @@
 
   <!--<a href="https://archive.eoghan.online" id="archive"><p> Archive</p></a>-->
 
-<footer></footer>
-<?php $page = 'home'; include("includes/navigation.php");?>
-
-
 </div>
 
-
+  <nav>
+    <a href="index.html" class="homelink">©2021 Eoghan Dempsey</a><div class="slashes">—</div><a href="art&design.html" class="andlink">Art & Design</a><div class="slashes">&nbsp;/&nbsp;</div><a href="photography.html" class="photolink">Photography</a>
+    <div class="slashes">&nbsp;/&nbsp;</div><a href="https://archive.eoghan.world" class="archivelink">Archive</a>
+  </nav>
 
 
   <script>

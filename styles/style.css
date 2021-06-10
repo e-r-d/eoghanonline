@@ -15,10 +15,14 @@ a {
   max-height: 100vh;
 }
 
-#loader2 {
-  height: 100vh;
+
+#photography nav, #photography nav a {
+  color: yellow;
 }
 
+#photography .photolink {
+  text-decoration: underline;
+}
 
 #loader img {
   position: absolute;
@@ -34,19 +38,6 @@ a {
     -webkit-filter: invert(100%) !important;
  }
 
-
-  #loader nav {
-    position: fixed;
-    bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    color: black;
-    margin-left: 2%;
-    margin-right: auto;
-    margin-bottom: 0;
-    font-size: 3.4vw;;
-    filter: blur(1.5px);
-    }
 
 @keyframes spin {
   from {
