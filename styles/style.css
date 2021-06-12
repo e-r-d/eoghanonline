@@ -283,19 +283,6 @@ a:hover span {
   width: 100%;
 }
 
-.backarrow {
-  position: fixed;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  margin-left: 1%;
-  margin-top: 1%;
-  align-self: start;
-  color:inherit;
-  filter: blur(1px);
-  font-size: 4vw;
-  z-index: 2;
-}
 
 
 
@@ -564,6 +551,20 @@ a:hover span {
       text-decoration: underline;
       }
 
+  .backarrow {
+        position: fixed;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        margin-left: 2%;
+        margin-top: 1%;
+        align-self: start;
+        color:inherit;
+        filter: blur(1px);
+        font-size: 4vw;
+        z-index: 2;
+      }
+
 
 #aboutpage p a{
   color: black;
@@ -698,7 +699,7 @@ nav {
   flex-wrap: wrap;
   margin-left: 2%;
   margin-right: auto;
-  font-size: 3.4vw;;
+  font-size: 3.3775vw;;
   filter: blur(1.5px);
   filter: drop-shadow(0);
 }
