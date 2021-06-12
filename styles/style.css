@@ -275,8 +275,18 @@ a:hover span {
 
 } #email {
   width: 100%;
+}
 
-
+.backarrow {
+  grid-column: 1 / 4;
+  grid-row: 9 / 11;
+  position: fixed;
+  text-align: left;
+  margin-left: 1%;
+  margin-top: 1%;
+  font-size: 4vw;
+  color: white;
+  z-index: 2;
 }
 
 .passport {
@@ -463,8 +473,7 @@ a:hover span {
 /*TRUE BLUE GRID*/
 
 .stickycaption {
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     bottom: 9vh;
     left: 20px;
     align-self: start;
@@ -473,6 +482,9 @@ a:hover span {
     font-size: 2vw;
   }
 
+  .stickycaption:hover a {
+    text-decoration: underline;
+    }
 
 
 .stickycaptionright {
@@ -500,11 +512,17 @@ a:hover span {
   height: 100vh;
 }
 
+#vh100max {
+  max-height: 100vh;
+}
+
 .worldmargin{
   margin: auto;
-  width: 58%;
+  width: 47.5%;
   margin-top: 20px;
+
 }
+
 
 .width100percent {
   width: 100%;
@@ -526,19 +544,19 @@ a:hover span {
 }
 
 .captionbottombigger {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 10px;
-  padding-left: 10px;
-  font-size: 2vw;
-  color: white;
+  margin-bottom: 25vh;
+  margin-left: 40px;
+  color:inherit;
   filter: blur(1.5px);
+  font-size: 2vw;
 }
 
+
 .captionbottombigger a {
-  color: white;
+  color: inherit;
   text-decoration: underline;
 }
+
 
 
 /*

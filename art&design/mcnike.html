@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>McNike™</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <link rel="icon" href="../personal/images/instagram.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/jquery.js"></script>
+</head>
+
+<body onload="myFunction()">
+  <div id="loader">
+    <img src="../personal/images/instagram.png" alt="instagram">
+  </div>
+
+  <div style="display:none; max-height: 100vh;" id="myDiv" class="animate-bottom">
+
+<img src="brands/mcnike2.gif" alt="mcnike" id="mcnike2">
+
+
+</div>
+
+<footer></footer>
+<nav>
+  <a href="../index.html" class="homelink">©2021 Eoghan Dempsey—</a>
+  <a href="../art&design.html" class="andlink">Art & Design</a><div class="slashes">&nbsp;/&nbsp;</div>
+  <a href="../photography.html" class="photolink">Photography</a>
+  <div class="slashes">&nbsp;/&nbsp;</div><a href="https://archive.eoghan.world" class="archivelink">Archive</a>
+</nav>
+
+
+
+
+  <script>
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+
+</body>
+
+
+</html>
