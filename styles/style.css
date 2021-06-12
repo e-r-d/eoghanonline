@@ -15,6 +15,9 @@ a {
   max-height: 100vh;
 }
 
+#photography {
+  color: yellow;
+}
 
 #photography nav, #photography nav a {
   color: yellow;
@@ -278,16 +281,20 @@ a:hover span {
 }
 
 .backarrow {
-  grid-column: 1 / 4;
-  grid-row: 9 / 11;
   position: fixed;
-  text-align: left;
+  top: 0;
+  margin: 0;
+  padding: 0;
   margin-left: 1%;
   margin-top: 1%;
+  align-self: start;
+  color:inherit;
+  filter: blur(1px);
   font-size: 4vw;
-  color: white;
   z-index: 2;
 }
+
+
 
 .passport {
   grid-column: 13;
@@ -499,6 +506,53 @@ a:hover span {
     font-size: 2vw;
   }
 
+  .fixedcaptionupperleft {
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      margin-left: 2%;
+      margin-top: 2%;
+      color:inherit;
+      filter: blur(1px);
+      font-size: 2vw;
+    }
+
+  .fixedcaptionupperright {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    margin-right: 2%;
+    margin-top: 2%;
+    color:inherit;
+    filter: blur(1px);
+    font-size: 2vw;
+  }
+
+  .fixedcaptionlowerright {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    margin-right: 2%;
+    margin-bottom: 10vh;
+    color:inherit;
+    filter: blur(1px);
+    font-size: 2vw;
+  }
+
+  .fixedcaptionupperright:hover {
+    text-decoration: underline;
+  }
+
+  .fixedcaptionlowerright:hover {
+    text-decoration: underline;
+  }
+
   .underlineahover:hover a {
     text-decoration: underline;
     }
@@ -513,13 +567,7 @@ a:hover span {
   text-decoration: underline;
 }
 
-.stickycaptionright {
-  position:fixed;
-  bottom:15px;
-  left:51%;
-  margin: 0;
-  padding: 0;
-}
+
 
 .truebluestickycaption {
   position: sticky;
