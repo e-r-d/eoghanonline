@@ -160,13 +160,13 @@ p {
 a span {
   display: none;
   text-align: center;
-  margin-top: 0;
+  margin-top: 2px;
   padding-top: 0;
 }
 
 a:hover span {
   display: block;
-  margin-top: 0;
+  margin-top: 2px;
   padding-top: 0;
 }
 
