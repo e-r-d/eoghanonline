@@ -14,7 +14,7 @@
 <body onload="myFunction()" id="home">
 
 <div id="loader">
-  <img src="personal/images/instagram.png" alt="instagram" class="invertcolorsimg">
+  <img src="personal/images/instagram.png" alt="instagram">
   <nav>
     <a href="about.html" class="homelink">©2021 Eoghan Dempsey</a><div class="slashes">—</div>
     <a href="art&design.html" class="andlink">Art & Design</a><div class="slashes">&nbsp;/&nbsp;</div>
@@ -27,60 +27,89 @@
 
 <div class="homegrid">
 
-  <div class="tobaccointernet">
-    <a href="art&design/tobaccointernet.html"><img src="art&design/tobaccointernet/images/tobaccointernet.jpg" alt="tobaccointernet" class="invertcolorsimg">
-      <span>Photography Installation and Zine</span></a>
-  </div>
+  <a href="art&design/tobaccointernet.html" class="link"><div class="tobaccointernet">
+
+    <figure><img src="art&design/tobaccointernet/images/tobaccointernet.jpg" alt="tobaccointernet" class="invertcolorsimg">
+      <figcaption><span>Photography Installation and Zine (2019)</span></figcaption></figure>
+
+  </div></a>
 
   <div class="wewontgohome">
+    <div class="ctable">
     <a href="art&design/wewontgohome.html"><img src="art&design/wewontgohome/images/wewontgohomeuntilmorning.jpg" alt="wewontgohome" class="invertcolorsimg">
     <span>Photobook (2019)</span></a>
   </div>
+</div>
+
 
   <div class="rock">
+    <div class="ctable">
+
     <a href="art&design/rock.html"><img src="art&design/rock/images/rock.jpg" alt="rock" class="rockimage">
-    <span>Sculpture/Furniture</span></a>
-  </div>
+    <span>Rocks (Sculpture / Furniture)</span></a>
+  </div>  </div>
+
 
 
   <div class="bunb">
+    <div class="ctable">
+
     <a href="art&design/alife/bunb.html"><img src="art&design/alife/bunb/images/bunb.jpg" alt="bunb" id="bunb">
-    <span>T-Shirt Design for Bun B</span></a>
-  </div>
+    <span>T-Shirt Design for Bun B™ / Alife®</span></a>
+  </div>  </div>
+
 
   <div class="world">
+    <div class="ctable">
+
     <a href="art&design/theworldisours.html"><img src="art&design/images/theworldisours1.png" alt="world" id="world">
     <span>Scarface Photoshop</span></a>
-  </div>
+  </div>  </div>
+
 
   <div class="alife3dmagnet">
+    <div class="ctable">
+
     <a href="art&design/alife.html"><img src="art&design/alife/3dlogo/alife3dmagnet.png" alt="alife3dmagnet" id="alife3dmagnet" >
-    <span>Alife® Designs 2018-2020</span></a>
-  </div>
+    <span>Alife® (2018-2020)</span></a>
+  </div>  </div>
+
 
   <div class="mcnike">
+    <div class="ctable">
+
     <a href="art&design/mcnike.html"><img src="art&design/brands/mcnike.png" alt="mcnike" id="mcnike">
     <span>McNike™</span></a>
-  </div>
+  </div>  </div>
+
 
   <div class="passport">
+    <div class="ctable">
+
     <a href="about.html"><img src="personal/images/passport.png" alt="passportphoto" id="passport">
     <span>Self</span></a>
-  </div>
+  </div>  </div>
+
 
   <div class="deerlightleak">
+    <div class="ctable">
+
     <a href="photography.html"><img src="photography/images/photo87.jpg" alt="deerlightleak" id="deerlightleak">
-    <span>Photography</span></a>
-  </div>
+    <span>Photography (2017-2021)</span></a>
+  </div>  </div>
+
 
   <div class="nuns">
+    <div class="ctable">
+
     <a href="photography.html"><img src= "photography/images/nuns.jpg" alt="nuns" id="nuns">
-    <span>Photography</span></a>
-  </div>
+    <span>Photography (2017-2021)</span></a>
+  </div>  </div>
+
 
   <div class="vhs">
     <a href="photography.html"><img src= "photography/images/photo135.jpg" alt="photo135" id="vhs">
-    <span>Photography</span></a>
+    <span>Photography (2017-2021)</span></a>
   </div>
 
   <div class="eoghanalife">
@@ -103,8 +132,12 @@
   </div>
 
   <div class="dempseydewalt">
-    <a href="art&design.html" class="invertcolorsimg"><img src="art&design/logos/dempsey_dewalt.png" alt="dempseydewalt" class="invertcolorsimg">
-    <span>Art & Design</span></a>
+    <div class="ctable">
+
+    <a href="about.html"><img src="art&design/logos/dempsey_dewalt.png" alt="dempseydewalt" class="invertcolorsimg">
+    <span>About</span></a>
+  </div>
+
   </div>
 
   <div class="globeteeshots">
@@ -113,9 +146,12 @@
   </div>
 
   <div class="tobaccointernetexhibit">
+    <div class="ctable">
+
     <a href="art&design/tobaccointernet.html"><img src="art&design/tobaccointernet/images/01_documentation.jpg" alt="tobaccointernetexhibit" class="invertcolorsimg">
-      <span>Photography Installation</span></a>
-  </div>
+      <span>Photography Installation at Tjaden (2019)</span></a>
+  </div>  </div>
+
 
   <div class="lightlink">
     <a href="art&design.html"><img src="art&design/images/lightlink.jpg" alt="lightlink">
@@ -179,6 +215,14 @@
     document.getElementById("myDiv").style.display = "block";
   }
   </script>
+
+  <script>
+
+  var $figure = $('figure'),
+    w = $figure.width();
+
+$figure.css({marginLeft: -w});
+</script>
 
 
 
