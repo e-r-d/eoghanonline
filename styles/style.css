@@ -605,6 +605,8 @@ end ROCK GRID*/
     color:inherit;
     filter: blur(1px);
     font-size: 2vw;
+    mix-blend-mode: difference;
+
   }
 
   .sstickycaptionright {
@@ -618,6 +620,8 @@ end ROCK GRID*/
     color:inherit;
     filter: blur(1px);
     font-size: 2vw;
+    mix-blend-mode: difference;
+
   }
 
 #stopsticky {
