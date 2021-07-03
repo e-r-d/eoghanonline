@@ -602,7 +602,7 @@ end ROCK GRID*/
     padding: 0;
     margin-left: 2%;
     align-self: start;
-    color:inherit;
+    color:white;
     filter: blur(1px);
     font-size: 2vw;
     mix-blend-mode: difference;
@@ -617,7 +617,7 @@ end ROCK GRID*/
     padding: 0;
     margin-left: 68%;
     align-self: start;
-    color:inherit;
+    color:white;
     filter: blur(1px);
     font-size: 2vw;
     mix-blend-mode: difference;
@@ -639,10 +639,11 @@ end ROCK GRID*/
     margin-left: 2%;
     margin-bottom: 10vh;
     align-self: start;
-    color:inherit;
+    color:white;
     filter: blur(1.5px);
     font-size: 2.25vw;
     mix-blend-mode: difference;
+
   }
 
 
@@ -683,7 +684,7 @@ color: white; }
     padding: 0;
     margin-right: 2%;
     margin-bottom: 10vh;
-    color:inherit;
+    color:white;
     filter: blur(1px);
     font-size: 2vw;
   }
