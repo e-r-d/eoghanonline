@@ -502,6 +502,10 @@ img {
   padding: 20px;
 }
 
+.truebluegrid div {
+  z-index: 1;
+}
+
 
 .truebluescan {
   grid-column: 1 / 3;
@@ -592,7 +596,7 @@ img {
   top: 15%;
   right: 0px;
   left: 68%;
-  z-index: -1;
+  z-index: 0
 } #truebluepng {width: 100%;}
 
 
@@ -697,9 +701,9 @@ end ROCK GRID*/
     margin-left: 2%;
     margin-bottom: 10vh;
     align-self: start;
-    color:white;
     filter: blur(1.5px);
     font-size: 2.25vw;
+    color:white;
     mix-blend-mode: difference;
 
   }
@@ -991,10 +995,17 @@ nav {
 
 .bluebackground nav {
   color: #3A6EA5;
+  z-index: 2;
 }
 
 .bluebackground .backarrow {
   color: #3A6EA5;
+}
+
+.bluebackground p {
+  color: #3A6EA5;
+  z-index: 2;
+
 }
 
 
