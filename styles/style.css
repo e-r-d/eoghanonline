@@ -188,6 +188,9 @@ p {
 
 }
 
+#rocks p {
+mix-blend-mode: normal;}
+
 
 .grid div {
   border: 1px red solid;
@@ -456,8 +459,14 @@ img {
 
 
 .photoicon {
-  grid-column: 10 / 13;
+  grid-column: 11 / 14;
   grid-row: 20 / 22;
+}
+
+.graphicdesignicon {
+  grid-column: 8 / 11;
+  grid-row: 20 / 22;
+  margin-top: -5%;
 }
 
 
@@ -975,7 +984,7 @@ nav {
   filter: blur(1.5px);
   filter: drop-shadow(0);
   color: white;
-  mix-blend-mode: screen;
+  mix-blend-mode: difference;
 }
 
 
