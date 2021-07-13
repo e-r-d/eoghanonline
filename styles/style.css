@@ -347,6 +347,7 @@ filter: drop-shadow(0 0 0.4rem black);
 
 
 
+
 .eoghanalife {
   opacity: 0;
 }
@@ -365,7 +366,11 @@ filter: drop-shadow(0 0 0.4rem black);
 
 
 .invertcolorsimg:hover img{
-  -webkit-filter: drop-shadow(0 0 0.4rem white) invert(100%) !important ;
+  -webkit-filter: drop-shadow(0 0 0.4rem white) invert(100%) !important;
+}
+
+.greyscaleh:hover img {
+  filter: grayscale(100%) !important;
 }
 
 #tobaccointernetpage .invertcolorsimg:hover {
@@ -374,7 +379,15 @@ filter: drop-shadow(0 0 0.4rem black);
 }
 
 
+.fullimagepage {
+  max-height: 100vh;
+}
 
+.fullimagepage img {
+    height: 100vh;
+    display: block;
+    margin: auto;
+}
 
 
 
