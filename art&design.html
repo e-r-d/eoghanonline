@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
-<body onload="myFunction()" id="home">
+<body onload="myFunction()">
 
 <div id="loader">
   <img src="personal/images/colourcode.png" alt="instagram">
@@ -22,28 +22,28 @@
 <div class="homegrid">
 
   <div class="tobaccointernet">
-    <a href="art&design/tobaccointernet.html" class="invertcolorsimg" id="tobaccointernetdiv"><img src="art&design/tobaccointernet/images/tobaccointernet.jpg" alt="tobaccointernet" id="tobaccointernet">
+    <a href="tobaccointernet.html" class="invertcolorsimg" id="tobaccointernetdiv"><img src="art&design/tobaccointernet/images/tobaccointernet.jpg" alt="tobaccointernet" id="tobaccointernet">
       <span>Photography Installation and Zine</span>
 </a>
   </div>
 
   <div class="wewontgohome">
-    <a href="art&design/wewontgohome.html"><img src="art&design/wewontgohome/images/wewontgohomeuntilmorning.jpg" alt="wewontgohome" class="invertcolorsimg">
+    <a href="wewontgohome.html"><img src="art&design/wewontgohome/images/wewontgohomeuntilmorning.jpg" alt="wewontgohome" class="invertcolorsimg">
     <span>Photobook (2019)</span></a>
   </div>
 
   <div class="rock">
-    <a href="art&design/rock.html"><img src="art&design/rock/images/rock.jpg" alt="rock" id="rock">
+    <a href="rock.html"><img src="art&design/rock/images/rock.jpg" alt="rock" id="rock">
     <span>Sculpture/Furniture</span></a>
   </div>
 
   <div class="bunb">
-    <a href="art&design/alife/bunb.html"><img src="art&design/alife/bunb/images/bunb.jpg" alt="bunb" id="bunb">
+    <a href="alife/bunb.html"><img src="art&design/alife/bunb/images/bunb.jpg" alt="bunb" id="bunb">
     <span>T-Shirt Design for Bun B</span></a>
   </div>
 
   <div class="world">
-    <a href="art&design/theworldisours.html"><img src="art&design/images/theworldisours1.png" alt="world" id="world">
+    <a href="theworldisours.html"><img src="art&design/images/theworldisours1.png" alt="world" id="world">
     <span>Scarface Photoshop</span></a>
   </div>
 
@@ -58,7 +58,7 @@
 
 
   <div class="alife3dmagnet">
-    <a href="art&design/alife.html"><img src="art&design/alife/3dlogo/alife3dmagnet.png" alt="alife3dmagnet" id="alife3dmagnet" >
+    <a href="alife.html"><img src="art&design/alife/3dlogo/alife3dmagnet.png" alt="alife3dmagnet" id="alife3dmagnet" >
     <span>Alife® Designs 2018-2020</span></a>
   </div>
 
@@ -78,7 +78,7 @@
   </div>
 
   <div class="trueblue">
-    <a href="art&design/trueblue.html" ><img src="art&design/trueblue/images/truebluescreenshot.png" alt="trueblue" id="trueblue">
+    <a href="trueblue.html" ><img src="art&design/trueblue/images/truebluescreenshot.png" alt="trueblue" id="trueblue">
     <span>True Blue Kitsch Magazine</span></a>
   </div>
 
@@ -112,9 +112,13 @@
       <span>2001 Painting</span></a>
   </div>
 
-  <a class="backarrow" href="../index.html">
-    ←
-  </a>
+  <a onclick="goBack()" class="backarrow">←</a>
+
+  <script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
 
 
   </div>

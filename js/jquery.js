@@ -87,6 +87,15 @@ $(function() {
 });
 
 $(function() {
+  $('.aboutlink').hover(function() {
+    $('.aboutlink').css('text-decoration', 'underline');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.aboutlink').css('text-decoration', 'none');
+  });
+});
+
+$(function() {
   $('.photolink').hover(function() {
     $('.photolink').css('text-decoration', 'underline');
   }, function() {
@@ -111,7 +120,7 @@ $('.eoghanalife').hover(function(){
   $('.eoghanalife').show();
 });
 });
-*/
+
 
 
 
@@ -128,3 +137,5 @@ $(function(){
   });
 });
 });
+
+*/

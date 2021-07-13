@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="artanddesign">
+<html id="graphicdesign">
 
 <head>
   <title>©2021 Eoghan Dempsey</title>
@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
-<body onload="myFunction()" id="home">
+<body onload="myFunction()">
 
 <div id="loader">
   <img src="personal/images/colourcode.png" alt="instagram">
@@ -112,9 +112,13 @@
       <span>2001 Painting</span></a>
   </div>
 
-  <a class="backarrow" href="../index.html">
-    ←
-  </a>
+  <a onclick="goBack()" class="backarrow">←</a>
+
+  <script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
 
 
   </div>

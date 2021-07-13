@@ -13,16 +13,20 @@
 
 <body onload="myFunction()">
   <div id="loader">
-    <img src="personal/images/colourcode.png" alt="instagram">
+    <img src="art&design/brands/mcnike.png" alt="mcnike">
   </div>
 
   <div style="display:none; max-height: 100vh;" id="myDiv" class="animate-bottom">
 
 <img src="art&design/brands/mcnike2.gif" alt="mcnike" id="mcnike2">
 
-<a class="backarrow" href="index.html">
-  ←
-</a>
+<a onclick="goBack()" class="backarrow">←</a>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
 
 </div>
 

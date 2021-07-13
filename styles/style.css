@@ -25,16 +25,13 @@ a {
   padding: 0;
 }
 
-.invertcolorsimg:hover {
-  -webkit-filter: invert(100%) !important;
-}
+
+
 
 #loader {
   height: 100vh;
   background-color:inherit;
   max-height: 100vh;
-
-
 }
 
 
@@ -45,7 +42,7 @@ a {
 }*/
 
 #photography {
-  color: yellow;
+  background-color: transparent;
 }
 
 #photography .photolink {
@@ -57,14 +54,43 @@ a {
    top: 49.5%;
    left: 50%;
    width: 150px;
-   height: 150px;
+   height: auto;
    margin:-75px 0 0 -75px;
   animation: spin 5s infinite linear;
+  filter: drop-shadow(0 0 0.4rem black);
  }
 
- #loader img:hover {
-   -webkit-filter: invert(100%) !important;
+ .blackbackground #loader img {
+   -webkit-filter: drop-shadow(0 0 0.4rem white);
  }
+
+.blackbackground #loader img:hover {
+   -webkit-filter: drop-shadow(0 0 0.4rem black) invert(100%);
+ }
+
+
+ #loader #circleshadow {
+   position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 180px;
+    height: auto;
+    margin:-90px 0 0 -90px;
+    animation: none;
+    opacity: 35%;
+    filter: blur(3px);
+
+  }
+
+
+
+
+
+ #loader img:hover {
+   -webkit-filter: drop-shadow(0 0 0.4rem white) invert(100%);
+ }
+
+
 
 @keyframes spin {
   from {
@@ -168,10 +194,11 @@ p {
   width: 100vw;
   height: 200vh;
   gap: 2%;
-  padding: 2.2%;
+  margin: 0;
+  padding: 2%;
+  padding-bottom: 0;
   text-align: center;
-
-
+  z-index: 1;
 }
 
 .grid {
@@ -182,21 +209,52 @@ p {
   width: 100vw;
   height: 200vh;
   gap: 2%;
-  padding: 2.2%;
+  margin: 0;
+  padding: 2%;
+  padding-bottom: 0;
   text-align: center;
-  display: none;
-
+  z-index: 0;
 }
+
+/*#home:hover .grid {
+  display: none;
+}
+
+
+
+#home:hover div {
+  border: 0px red solid;
+}
+
+#aboutpage:hover div {
+  border: 0px red solid;
+}*/
+
+
 
 #rocks p {
 mix-blend-mode: normal;}
 
+/*
+.homegrid div {
+border: 1px red solid;
+}
+*/
+
+.grid {
+  display: none;
+}
+
+
 
 .grid div {
-  border: 1px red solid;
-  color: white;
-  mix-blend-mode: difference;
-  opacity: 15%;
+  width: 100%;
+  height: 100%;
+  border: 1px grey solid;
+  opacity: 25%;
+  color: grey;
+  font-size: 1.5vw;
+  z-index: 0;
 }
 
 
@@ -211,32 +269,142 @@ mix-blend-mode: normal;}
   text-align: center;
 }
 
+#aboutpage p {
+  z-index: 2;
+}
+
+
 img {
   max-height: 100%;
   max-width: 100%;
-  display: block;
-  margin: auto;
 }
 
-.homegrid img {
-  margin-bottom: 2px;
+
+
+.homegrid div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
+
+
+
+.homegrid a {
+  height: 100%;
+  display: flex;
+  flex-flow: wrap;
+  text-align: center;
+}
+
+
+.homegrid a img {
+  margin: auto;
+  margin-bottom: 4px;
+}
+
 
 .homegrid a span {
+  display: block;
+  margin: auto;
+  margin-top: 0;
+  width: 100%;
+}
+
+.captiondiv {
+  display: block;
+  margin: auto;
+  margin-top: 0;
+  width: 100%;
   opacity: 0;
-  text-align: center;
-  padding-top: 4px;
-  margin-top: 4px;
-
 }
 
-.homegrid a:hover span {
+.wewontgohome:hover .captiondiv{
   opacity: 1;
-  text-align: center;
-  padding-top: 4px;
-  margin-top: 4px;
-
 }
+
+
+
+#home a span {
+  opacity: 0;
+}
+
+#home a:hover span {
+  opacity: 1;
+}
+
+.homegrid a img{
+filter: drop-shadow(0 0 0.4rem black);
+}
+
+#home .homegrid a img{
+filter: drop-shadow(0 0 0rem black);
+}
+
+#home .homegrid a:hover img{
+filter: drop-shadow(0 0 0.4rem black);
+}
+
+
+
+.eoghanalife {
+  opacity: 0;
+}
+
+.eoghanalife:hover {
+  opacity: 1;
+}
+
+
+
+
+
+#bunbpage a:hover img{
+filter: drop-shadow(0 0 0.4rem black);
+}
+
+
+.invertcolorsimg:hover img{
+  -webkit-filter: drop-shadow(0 0 0.4rem white) invert(100%) !important ;
+}
+
+#tobaccointernetpage .invertcolorsimg:hover {
+  -webkit-filter: drop-shadow(0 0 2rem black) invert(100%) !important ;
+  transition: all 0.5s;
+}
+
+
+
+
+
+
+
+/*.shadowcont {
+   position: relative;
+   background-color: transparent;
+  -webkit-box-shadow: inset 0 0 10px 10px #000;
+    -moz-box-shadow: inset 0 0 10px 10px #000;
+    box-shadow: inset 0 0 75px 5px white;
+}*/
+
+#photography .shadowcont {
+   position: relative;
+   background-color: transparent;
+  -webkit-box-shadow: inset 0 0 10px 10px #000;
+    -moz-box-shadow: inset 0 0 10px 10px #000;
+    box-shadow: inset 0 0 25px black;
+}
+
+#photography .shadowcont:hover img {
+  z-index: -1;
+  position: relative;
+}
+
+/*#tobaccointernetpage body {
+  background-color: black;
+  z-index: -2;
+  position: relative;}*/
+
 
 
 /**HOMEPAGE images**/
@@ -244,6 +412,7 @@ img {
 .tobaccointernet {
   grid-column: 1 / 5;
   grid-row: 1 / 5;
+
 }
 
 .link  {
@@ -255,22 +424,18 @@ img {
 
 .nuns {
   grid-column: 5 / 9;
-  grid-row: 2 / 7;
-  margin-top: 12.5%;
+  grid-row: 2 / 6;
 }
 
-.people {
-  grid-column: 8 / 11;
-  grid-row: 6 / 12;
-  margin-top: 10%;
 
+.people {
+  grid-column: 2 / 5;
+  grid-row: 5 / 10;
 }
 
 .eoghanalife {
-  grid-column: 8 / 11;
-  grid-row: 6 / 12;
-  margin-top: 10%;
-
+  grid-column: 2 / 5;
+  grid-row: 5 / 10;
 }
 
 
@@ -280,13 +445,13 @@ img {
 }
 
 .world {
-  grid-column: 4 / 8;
-  grid-row: 15 / 17;
+  grid-column: 4 / 7;
+  grid-row: 16 / 18;
 }
 
 .deers {
-  grid-column: 3 / 8;
-  grid-row: 17 / 22;
+  grid-column: 4 / 7;
+  grid-row: 18 / 21;
 }
 
 
@@ -300,41 +465,36 @@ img {
 }*/
 
 .bunb {
-  grid-column: 1 / 5;
-  grid-row: 5 / 11;
+  grid-column: 9 / 12;
+  grid-row: 1 / 6;
+
+
 }
 
 .tobaccointernetexhibit {
-  grid-column: 13 / 16;
-  grid-row: 8 / 14;
+  grid-column: 14 / 16;
+  grid-row: 3 / 7;
 
-  margin-right: 0%;
 }
 
 .rock {
-  grid-column: 9 / 12;
-  grid-row: 1 / 7;
-
+  grid-column: 8 / 12;
+  grid-row: 6 / 12;
 }
 
 .alife3dmagnet {
-  grid-column: 3 / 7;
+  grid-column: 4 / 6;
     grid-row: 12 / 15;
-    margin-left: 25%;
-    margin-right: 22.5%;
 }
 
 .wewontgohome {
   grid-column: 5 / 8;
-  grid-row: 6 / 12;
-  margin-top: 10%;
-
+  grid-row: 6 / 11;
 }
 
 .trueblue {
   grid-column: 12 / 16;
-  grid-row: 1 / 8;
-
+  grid-row: 7 / 14;
 }
 
 
@@ -342,22 +502,26 @@ img {
 
 
 .email {
-  position: fixed;
-  bottom: 60px;
-  left: 40px;
-  width: 15%;
+  grid-column: 1 / 3;
+  grid-row:  5 / 10;
+margin: auto;
+  margin-right: 50%;
+  margin-left: -10%;
 
-} #email {
-  width: 100%;
+/*  position: fixed;
+  width: 17.5%;
+  left: 2%;
+  bottom: 2%;
+  margin: 0;
+  padding: 0;*/
 }
 
 
 
 
 .passport {
-  grid-column: 11;
-  grid-row: 6 / 8;
-  margin-top: 35%;
+  grid-column: 7;
+  grid-row: 16 / 18;
 }
 
 #aboutpage .passport {
@@ -365,11 +529,22 @@ img {
   grid-row:  2 / 4;
 }
 
+#aboutpage .vismap {
+  grid-column: 7 / 17;
+  grid-row: 1 / 14;
+  z-index: 0;
+}
+
+
+
 
 .dempseydewalt {
-  grid-column: 5 / 9;
+  grid-column: 12 / 16;
   grid-row: 1 / 3;
 }
+
+
+
 
 
 #aboutpage .dempseydewalt {
@@ -389,7 +564,7 @@ img {
 
 .vhs {
   grid-column: 13 / 16;
-  grid-row:  14 / 20;
+  grid-row:  14 / 19;
 }
 
 .stayinside {
@@ -400,8 +575,7 @@ img {
 
 .lightlink {
   grid-column: 6 / 10;
-  grid-row:  11 / 15;
-  margin-top: 8%;
+  grid-row:  12 / 16;
 }
 
 
@@ -414,59 +588,58 @@ img {
 
 .painting2001 {
   grid-column: 3 / 6;
-  grid-row:  18 / 21;
+  grid-row:  18 / 20;
 }
 
 .onerolloneweek {
   grid-column: 8 / 10;
-  grid-row:  15 / 20;
+  grid-row:  16 / 19;
 }
 
 .karshe {
   grid-column: 10 / 13;
-  grid-row: 12 / 18;
+  grid-row: 14 / 19;
 }
 
 
 
 .arena {
-  grid-column: 11 / 13;
-  grid-row: 10 / 12;
+  grid-column: 12 / 14;
+    grid-row: 5 / 7;
 
 }
 
 .instagram {
-  grid-column: 11 / 13;
-    grid-row: 8 / 10;
+  grid-column: 12 / 14;
+    grid-row: 3 / 5;
 
 
 }
 
 .mcnike {
-  grid-column: 8 / 10;
-  grid-row: 15 / 17;
+  grid-column: 12 / 14;
+  grid-row: 19 / 21;
 }
 
 .seveneoghan {
   grid-column: 14 / 16;
-  grid-row: 20 / 22;
+  grid-row: 19 / 21;
 }
 
 .twitter {
-  grid-column: 11 / 13;
-  grid-row: 18 / 20;
+  grid-column: 10 / 12;
+  grid-row: 19 / 21;
 }
 
 
 .photoicon {
-  grid-column: 11 / 14;
-  grid-row: 20 / 22;
+  grid-column: 7 / 10;
+  grid-row: 19 / 21;
 }
 
 .graphicdesignicon {
-  grid-column: 8 / 11;
-  grid-row: 20 / 22;
-  margin-top: -5%;
+  grid-column: 11 / 13;
+  grid-row: 20 / 21;
 }
 
 
@@ -593,7 +766,7 @@ img {
 .truebluepng {
   grid-column: 4;
   position: fixed;
-  top: 15%;
+  bottom: 10%;
   right: 0px;
   left: 68%;
   z-index: 0
@@ -659,30 +832,31 @@ end ROCK GRID*/
 .sstickycaption {
     position: sticky;
     position: -webkit-sticky;
-    bottom: 10vh;
     margin: 0;
     padding: 0;
     margin-left: 2%;
+    bottom: 10%;
     align-self: start;
-    color:white;
-    filter: blur(1px);
-    font-size: 2vw;
+    filter: blur(1.5px);
+    font-size: 2.25vw;
     mix-blend-mode: difference;
+    color:white;
 
   }
 
   .sstickycaptionright {
     position: sticky;
     position: -webkit-sticky;
-    bottom: 10vh;
     margin: 0;
     padding: 0;
-    margin-left: 68%;
+    margin-left: 63%;
+    bottom: 10%;
     align-self: start;
-    color:white;
-    filter: blur(1px);
-    font-size: 2vw;
+    filter: blur(1.5px);
+    font-size: 2.25vw;
     mix-blend-mode: difference;
+    color:white;
+
 
   }
 
@@ -690,7 +864,12 @@ end ROCK GRID*/
   margin-bottom: 20vh;
 }
 
-
+#seveneoghanpagepng {
+  height: 100vh;
+  width: auto;
+  display: block;
+  margin: auto;
+}
 
 
 .stickycaption {
@@ -699,13 +878,25 @@ end ROCK GRID*/
     margin: 0;
     padding: 0;
     margin-left: 2%;
-    margin-bottom: 10vh;
+    margin-bottom: 5.5%;
     align-self: start;
     filter: blur(1.5px);
     font-size: 2.25vw;
     color:white;
     mix-blend-mode: difference;
+  }
 
+  .captionbottombigger {
+
+    margin: 0;
+    padding: 0;
+    margin-left: 2%;
+    margin-bottom: 13.5%;
+    align-self: start;
+    filter: blur(1.5px);
+    font-size: 2.25vw;
+    color:white;
+    mix-blend-mode: difference;
   }
 
 
@@ -724,6 +915,15 @@ end ROCK GRID*/
       mix-blend-mode: difference;
       color: white;  }
 
+  #rocks nav, #rocks a, #rocks p {
+    mix-blend-mode: normal;
+  }
+
+  #tobaccointernetpage nav, #tobaccointernetpage a, #tobaccointernetpage p {
+    mix-blend-mode: normal;
+  }
+
+
   .fixedcaptionupperright {
     position: fixed;
     top: 0;
@@ -738,25 +938,39 @@ font-size: 3.3775vw;
 mix-blend-mode: difference;
 color: white; }
 
-  .fixedcaptionlowerright {
+  .fixedcaptionlowerright, .fixedlinklowerright {
     position: fixed;
     bottom: 0;
     right: 0;
     margin: 0;
     padding: 0;
     margin-right: 2%;
-    margin-bottom: 10vh;
+    margin-bottom: 5.5%;
+    filter: blur(1.5px);
+    font-size: 2.25vw;
     color:white;
-    filter: blur(1px);
-    font-size: 2vw;
+    mix-blend-mode: difference;
   }
+
 
   .fixedcaptionupperright:hover {
     text-decoration: underline;
+    filter: drop-shadow(0 0 0.4rem white);
   }
+
+  .fixedcaptionupperleft a:hover {
+  filter: drop-shadow(0 0 0.4rem white);
+}
+
 
   .fixedcaptionlowerright:hover {
     text-decoration: underline;
+    filter: blur(1.5px) drop-shadow(0 0 0.4rem white);
+  }
+
+  .fixedlinklowerright:hover {
+    text-decoration: underline;
+    filter:  drop-shadow(0 0 0.4rem white);
   }
 
   .underlineahover:hover a {
@@ -784,48 +998,28 @@ color: white; }
         margin-left: 2%;
         margin-top: 1%;
         align-self: start;
-        color:inherit;
-        filter: blur(1px);
+        filter: blur(1.5px);
         font-size: 4vw;
         z-index: 2;
         mix-blend-mode: difference;
         color: white;
-
       }
 
-      #photography .backarrow {
-            position: fixed;
-            top: 0;
-            margin: 0;
-            padding: 0;
-            margin-left: 2%;
-            margin-top: 83vh;
-            align-self: start;
-            color:inherit;
-            filter: blur(1px);
-            font-size: 4vw;
-            z-index: 2;
-            mix-blend-mode: difference;
-            color: white;
+    .backarrow:hover {
+      filter: drop-shadow(0 0 0.4rem white);
+    }
 
+
+
+      #photography .backarrow {
+            margin-top: 83vh;
           }
 
 
-          #aboutpage .backarrow {
-            position: fixed;
-            top: 0;
-            margin: 0;
-            padding: 0;
-            margin-left: 2px;
-            margin-top: 83vh;
-            align-self: start;
-            color:inherit;
-            filter: blur(1px);
-            font-size: 4vw;
-            z-index: 2;
-            mix-blend-mode: difference;
-            color: white;
 
+          #aboutpage .backarrow {
+            margin-top: 83vh;
+            margin-left: 2px;
               }
 
 
@@ -872,16 +1066,7 @@ color: white; }
   color: inherit;
 }
 
-.captionbottombigger {
-  margin: 0;
-  padding: 0;
-  margin-left: 2%;
-  margin-bottom: 24vh;
-  align-self: start;
-  color:inherit;
-  filter: blur(1.5px);
-  font-size: 2vw;
-}
+
 
 
 
@@ -979,16 +1164,25 @@ nav {
 
 nav {
   position: fixed;
-  bottom: 20px;
   display: flex;
   flex-wrap: wrap;
+  font-size: 3.45vw;
+  bottom: 20px;
   margin-left: 2%;
   margin-right: auto;
-  font-size: 3.45vw;
   filter: blur(1.5px);
   filter: drop-shadow(0);
   color: white;
   mix-blend-mode: difference;
+}
+
+nav a:hover {
+filter: drop-shadow(0 0 0.2rem white);
+text-decoration: underline;
+}
+
+.bluebackground nav a:hover, .bluebackground .backarrow:hover {
+  filter: drop-shadow(0 0 0.4rem #3A6EA5);
 }
 
 
@@ -1009,14 +1203,21 @@ nav {
 }
 
 
+#earow1 {
+  padding-right: 0;
+}
+
+#alifeohiotee1 {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+#eoghanalife {
+margin-top:0;
+}
 
 
-
-
-
-#backnav {
-  color: white;
-z-index: 0;}
 
 
 
@@ -1071,6 +1272,7 @@ footer {
       -ms-flex-wrap: wrap; /* IE10 */
       flex-wrap: wrap;
       padding: 0;
+      margin: 0;
     }
 
 
@@ -1106,10 +1308,11 @@ footer {
     }
 
     .column30 {
-      -ms-flex: 33.3%; /* IE10 */
-      flex: 33.3%;
-      max-width: 33.3%;
-      padding: 0 0px;
+      -ms-flex: 33.3333333333%; /* IE10 */
+      flex: 33.3333333333%;
+      max-width: 33.3333333333%;
+      padding: 0;
+      margin: 0;
     }
 
     .column30 img {
@@ -1118,6 +1321,8 @@ footer {
       width: 100%;
       display: block;
       margin: auto;
+      padding: 0;
+      margin: 0;
     }
 
     .column60 {
