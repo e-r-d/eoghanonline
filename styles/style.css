@@ -16,6 +16,7 @@ a {
 
 
 
+
 .italic {
   font-style: italic;
 }
@@ -35,12 +36,6 @@ a {
 }
 
 
-
-/*#loader nav, #loader nav a {
-  color: white;
-  text-shadow: 1px 1px 3px #000000;
-}*/
-
 #photography {
   background-color: transparent;
 }
@@ -48,6 +43,17 @@ a {
 #photography .photolink {
   text-decoration: underline;
 }
+
+#artanddesign .andlink {
+  text-decoration: underline;
+}
+
+#aboutpage .aboutlink {
+  text-decoration: underline;
+}
+
+
+
 
 #loader img {
   position: absolute;
@@ -198,7 +204,6 @@ p {
   padding: 2%;
   padding-bottom: 0;
   text-align: center;
-  z-index: 1;
 }
 
 .grid {
@@ -216,27 +221,13 @@ p {
   z-index: 0;
 }
 
-/*#home:hover .grid {
-  display: none;
-}
-
-
-
-#home:hover div {
-  border: 0px red solid;
-}
-
-#aboutpage:hover div {
-  border: 0px red solid;
-}*/
-
 
 
 #rocks p {
 mix-blend-mode: normal;}
 
-/*
-.homegrid div {
+
+/*.homegrid div {
 border: 1px red solid;
 }
 */
@@ -254,7 +245,6 @@ border: 1px red solid;
   opacity: 25%;
   color: grey;
   font-size: 1.5vw;
-  z-index: 0;
 }
 
 
@@ -269,19 +259,38 @@ border: 1px red solid;
   text-align: center;
 }
 
-#aboutpage p {
-  z-index: 2;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
 }
 
-
-img {
-  max-height: 100%;
-  max-width: 100%;
+.horizontal {
+  grid-column: span 2;
 }
 
+.vertical {
+  grid-column: span 3;
+  grid-row: span 3;
+}
 
+/* ! gallery styling */
+.gallery {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+}
 
-.homegrid div {
+#graphicdesign nav {
+  margin-left: 0;
+}
+
+.gallery-item {
+  /*border: 1px solid red;*/
+  padding: 1ch 1rem;
+  position: relative;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,7 +299,18 @@ img {
 
 
 
-.homegrid a {
+.gallery-item img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  margin-bottom: 4px;
+}
+
+
+
+
+
+.gallery a {
   height: 100%;
   display: flex;
   flex-flow: wrap;
@@ -298,7 +318,60 @@ img {
 }
 
 
-.homegrid a img {
+.gallery-item span {
+  display: block;
+  margin: auto;
+  margin-top: 0;
+  width: 100%;
+}
+
+
+
+#graphicdesign body,
+#graphicdesign html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#aboutpage p {
+  z-index: 1;
+}
+
+
+.homegrid img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+
+#home .homegrid div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#home .homegrid a {
+  height: 100%;
+  display: flex;
+  flex-flow: wrap;
+  text-align: center;
+}
+
+
+#home .homegrid a img {
   margin: auto;
   margin-bottom: 4px;
 }
@@ -311,19 +384,6 @@ img {
   width: 100%;
 }
 
-.captiondiv {
-  display: block;
-  margin: auto;
-  margin-top: 0;
-  width: 100%;
-  opacity: 0;
-}
-
-.wewontgohome:hover .captiondiv{
-  opacity: 1;
-}
-
-
 
 #home a span {
   opacity: 0;
@@ -333,7 +393,7 @@ img {
   opacity: 1;
 }
 
-.homegrid a img{
+.homegrid a img, .gallery a img{
 filter: drop-shadow(0 0 0.4rem black);
 }
 
@@ -551,8 +611,8 @@ margin: auto;
 }
 
 #aboutpage .vismap {
-  grid-column: 7 / 17;
-  grid-row: 1 / 14;
+  grid-column: 5 / 17;
+  grid-row: 1 / 15;
   z-index: 0;
 }
 
@@ -569,9 +629,13 @@ margin: auto;
 
 
 #aboutpage .dempseydewalt {
-  grid-column: 9 / 14;
-  grid-row: 3 / 7;
+  grid-column: 11 / 16;
+  grid-row: 8 / 12;
 
+}
+
+#aboutpage .homegrid div a {
+  z-index: 2;
 }
 
 .avril14{
@@ -976,22 +1040,22 @@ color: white; }
 
   .fixedcaptionupperright:hover {
     text-decoration: underline;
-    filter: drop-shadow(0 0 0.4rem white);
+    filter: drop-shadow(0 0 0.1rem white);
   }
 
   .fixedcaptionupperleft a:hover {
-  filter: drop-shadow(0 0 0.4rem white);
+  filter: drop-shadow(0 0 0.1rem white);
 }
 
 
   .fixedcaptionlowerright:hover {
     text-decoration: underline;
-    filter: blur(1.5px) drop-shadow(0 0 0.4rem white);
+    filter: blur(1.5px) drop-shadow(0 0 0.1rem white);
   }
 
   .fixedlinklowerright:hover {
     text-decoration: underline;
-    filter:  drop-shadow(0 0 0.4rem white);
+    filter:  drop-shadow(0 0 0.1rem white);
   }
 
   .underlineahover:hover a {
@@ -1192,18 +1256,22 @@ nav {
   margin-left: 2%;
   margin-right: auto;
   filter: blur(1.5px);
-  filter: drop-shadow(0);
   color: white;
   mix-blend-mode: difference;
 }
 
+#home nav {
+  font-size: 3vw;
+  bottom: 50%;
+}
+
 nav a:hover {
-filter: drop-shadow(0 0 0.2rem white);
+filter: drop-shadow(0 0 0.1rem white);
 text-decoration: underline;
 }
 
 .bluebackground nav a:hover, .bluebackground .backarrow:hover {
-  filter: drop-shadow(0 0 0.4rem #3A6EA5);
+  filter: drop-shadow(0 0 0.1rem #3A6EA5);
 }
 
 
